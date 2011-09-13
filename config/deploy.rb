@@ -1,5 +1,5 @@
 set :application, "WhatTheNumbers"
-set :repository,  "git@github.com:edwardshen/NEPRubyUI.git"
+set :repository,  "git@github.com:TingChengLin/cap_test.git"
 
 set :scm, :git
 set :deploy_via, :remote_cache
@@ -9,7 +9,7 @@ set :deploy_to, "/home/victor/testing/cap_test"
 set :rake, "/var/lib/gems/1.8/bin/rake"
 
 set :user, "victor"
-set :use_sudo, true
+set :use_sudo, false
 
 set :scm_username, "TingChengLin" # svn user name
 set :scm_password, "6yhnnhy6"
