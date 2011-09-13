@@ -1,0 +1,2 @@
+class CapController < ApplicationController
+end
