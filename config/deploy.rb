@@ -32,3 +32,10 @@ set :rails_env, "development"
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 # end
+
+namespace :deploy do
+  task :restart, :roles => [:web], :except => { :no_release => true } do
+    run "touch #{current_path}/tmp/restart.txt"
+  end
+end
+
