@@ -11,8 +11,8 @@ set :rake, "/var/lib/gems/1.8/bin/rake"
 set :user, "victor"
 set :use_sudo, false
 
-set :scm_username, "TingChengLin" # svn user name
-set :scm_password, "6yhnnhy6"
+#set :scm_username, "TingChengLin" # svn user name
+#set :scm_password, "6yhnnhy6"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "204.232.200.137"                          # Your HTTP server, Apache/etc
