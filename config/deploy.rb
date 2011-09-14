@@ -4,6 +4,7 @@ set :repository,  "git@github.com:TingChengLin/cap_test.git"
 set :scm, :git
 set :deploy_via, :remote_cache
 set :use_sudo, false
+set :keep_releases, 5
 set :branch, "master"
 set :deploy_to, "/home/victor/testing/cap_test"
 set :rake, "/var/lib/gems/1.8/bin/rake"
@@ -11,8 +12,6 @@ set :rake, "/var/lib/gems/1.8/bin/rake"
 set :user, "victor"
 set :use_sudo, false
 
-#set :scm_username, "TingChengLin" # svn user name
-#set :scm_password, "6yhnnhy6"
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 role :web, "204.232.200.137"                          # Your HTTP server, Apache/etc
